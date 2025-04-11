@@ -1,0 +1,92 @@
+.dropdown .dropdown-toggle:after,
+.btn-group .dropdown-toggle:after,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-toggle:after,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-toggle:after {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    font: normal normal normal 24px/1 "feather";
+    content: "\e842";
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    line-height: .625rem;
+    font-size: .875rem;
+    margin-left: .3rem;
+}
+
+.dropdown .dropdown-menu,
+.btn-group .dropdown-menu,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu {
+    padding: .35rem;
+    margin-top: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+}
+
+.dropdown .dropdown-menu .dropdown-item,
+.btn-group .dropdown-menu .dropdown-item,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item {
+    font-size: .812rem;
+    padding: .25rem .875rem;
+    transition: all .2s ease-in-out;
+    border-radius: 2px;
+}
+
+.dropdown .dropdown-menu .dropdown-item i,
+.dropdown .dropdown-menu .dropdown-item svg,
+.btn-group .dropdown-menu .dropdown-item i,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item i,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item i,
+.btn-group .dropdown-menu .dropdown-item svg,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item svg,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item svg {
+    color: #686868;
+    transition: all .2s ease-in-out;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover,
+.btn-group .dropdown-menu .dropdown-item:hover,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item:hover,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(114, 124, 245, 0.1);
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover,
+.dropdown .dropdown-menu .dropdown-item:hover i,
+.dropdown .dropdown-menu .dropdown-item:hover svg,
+.btn-group .dropdown-menu .dropdown-item:hover,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item:hover,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item:hover,
+.btn-group .dropdown-menu .dropdown-item:hover i,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item:hover i,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item:hover i,
+.btn-group .dropdown-menu .dropdown-item:hover svg,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item:hover svg,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item:hover svg {
+    color: #727cf5;
+}
+
+.dropdown .dropdown-menu .dropdown-item:active,
+.btn-group .dropdown-menu .dropdown-item:active,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-menu .dropdown-item:active,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-menu .dropdown-item:active {
+    background: initial;
+}
+
+.rtl .dropdown .dropdown-toggle::after,
+.rtl .btn-group .dropdown-toggle::after,
+.rtl .fc .fc-toolbar.fc-header-toolbar .fc-left .fc-button-group .dropdown-toggle::after,
+.fc .fc-toolbar.fc-header-toolbar .fc-left .rtl .fc-button-group .dropdown-toggle::after,
+.rtl .fc .fc-toolbar.fc-header-toolbar .fc-right .fc-button-group .dropdown-toggle::after,
+.fc .fc-toolbar.fc-header-toolbar .fc-right .rtl .fc-button-group .dropdown-toggle::after {
+    margin-left: 0;
+    margin-right: .3rem;
+}
+
+.rtl .dropdown-menu {
+    text-align: right;
+}

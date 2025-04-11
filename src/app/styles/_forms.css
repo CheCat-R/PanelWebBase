@@ -1,0 +1,405 @@
+.form-control,
+select,
+.email-compose-fields .select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-search__field,
+.typeahead,
+.tt-query,
+.tt-hint {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .form-control,
+    select,
+    .email-compose-fields .select2-container--default .select2-selection--multiple,
+    .select2-container--default .select2-selection--single,
+    .select2-container--default .select2-selection--single .select2-search__field,
+    .typeahead,
+    .tt-query,
+    .tt-hint {
+        transition: none;
+    }
+}
+
+.form-control::-ms-expand,
+select::-ms-expand,
+.email-compose-fields .select2-container--default .select2-selection--multiple::-ms-expand,
+.select2-container--default .select2-selection--single::-ms-expand,
+.select2-container--default .select2-selection--single .select2-search__field::-ms-expand,
+.typeahead::-ms-expand,
+.tt-query::-ms-expand,
+.tt-hint::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:-moz-focusring,
+select:-moz-focusring,
+.email-compose-fields .select2-container--default .select2-selection--multiple:-moz-focusring,
+.select2-container--default .select2-selection--single:-moz-focusring,
+.select2-container--default .select2-selection--single .select2-search__field:-moz-focusring,
+.typeahead:-moz-focusring,
+.tt-query:-moz-focusring,
+.tt-hint:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #495057;
+}
+
+.form-control:focus,
+select:focus,
+.email-compose-fields .select2-container--default .select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single:focus,
+.select2-container--default .select2-selection--single .select2-search__field:focus,
+.typeahead:focus,
+.tt-query:focus,
+.tt-hint:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control::placeholder,
+select::placeholder,
+.email-compose-fields .select2-container--default .select2-selection--multiple::placeholder,
+.select2-container--default .select2-selection--single::placeholder,
+.select2-container--default .select2-selection--single .select2-search__field::placeholder,
+.typeahead::placeholder,
+.tt-query::placeholder,
+.tt-hint::placeholder {
+    color: #c9c8c8;
+    opacity: 1;
+}
+
+.form-control:disabled,
+select:disabled,
+.email-compose-fields .select2-container--default .select2-selection--multiple:disabled,
+.select2-container--default .select2-selection--single:disabled,
+.select2-container--default .select2-selection--single .select2-search__field:disabled,
+.typeahead:disabled,
+.tt-query:disabled,
+.tt-hint:disabled,
+.form-control[readonly],
+select[readonly],
+.email-compose-fields .select2-container--default .select2-selection--multiple[readonly],
+.select2-container--default .select2-selection--single[readonly],
+.select2-container--default .select2-selection--single .select2-search__field[readonly],
+.typeahead[readonly],
+.tt-query[readonly],
+.tt-hint[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+input[type="date"].form-control,
+.email-compose-fields .select2-container--default input.select2-selection--multiple[type="date"],
+.select2-container--default input.select2-selection--single[type="date"],
+.select2-container--default .select2-selection--single input.select2-search__field[type="date"],
+input.typeahead[type="date"],
+input.tt-query[type="date"],
+input.tt-hint[type="date"],
+input[type="time"].form-control,
+.email-compose-fields .select2-container--default input.select2-selection--multiple[type="time"],
+.select2-container--default input.select2-selection--single[type="time"],
+.select2-container--default .select2-selection--single input.select2-search__field[type="time"],
+input.typeahead[type="time"],
+input.tt-query[type="time"],
+input.tt-hint[type="time"],
+input[type="datetime-local"].form-control,
+.email-compose-fields .select2-container--default input.select2-selection--multiple[type="datetime-local"],
+.select2-container--default input.select2-selection--single[type="datetime-local"],
+.select2-container--default .select2-selection--single input.select2-search__field[type="datetime-local"],
+input.typeahead[type="datetime-local"],
+input.tt-query[type="datetime-local"],
+input.tt-hint[type="datetime-local"],
+input[type="month"].form-control,
+.email-compose-fields .select2-container--default input.select2-selection--multiple[type="month"],
+.select2-container--default input.select2-selection--single[type="month"],
+.select2-container--default .select2-selection--single input.select2-search__field[type="month"],
+input.typeahead[type="month"],
+input.tt-query[type="month"],
+input.tt-hint[type="month"] {
+    appearance: none;
+}
+
+select.form-control:focus::-ms-value,
+select:focus::-ms-value,
+.email-compose-fields .select2-container--default select.select2-selection--multiple:focus::-ms-value,
+.select2-container--default select.select2-selection--single:focus::-ms-value,
+.select2-container--default .select2-selection--single select.select2-search__field:focus::-ms-value {
+    color: #495057;
+    background-color: #ffffff;
+}
+
+.form-control-file,
+.form-control-range {
+    display: block;
+    width: 100%;
+}
+
+.input-group-append,
+.input-group-prepend {
+    color: #c9c8c8;
+    width: auto;
+    border: none;
+}
+
+.input-group-append .input-group-text,
+.input-group-prepend .input-group-text {
+    border-color: #e8ebf1;
+    padding: 0.5rem 0.75rem;
+    color: #c9c8c8;
+}
+
+.form-control,
+select,
+.email-compose-fields .select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-search__field,
+.typeahead,
+.tt-query,
+.tt-hint {
+    border: 1px solid #e8ebf1;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.form-control.form-control-sm,
+select.form-control-sm,
+.email-compose-fields .select2-container--default .form-control-sm.select2-selection--multiple,
+.select2-container--default .form-control-sm.select2-selection--single,
+.select2-container--default .select2-selection--single .form-control-sm.select2-search__field,
+.form-control-sm.typeahead,
+.form-control-sm.tt-query,
+.form-control-sm.tt-hint {
+    padding: .25rem .75rem;
+}
+
+select {
+    border-radius: 0;
+}
+
+select.form-control,
+select,
+.email-compose-fields .select2-container--default select.select2-selection--multiple,
+.select2-container--default select.select2-selection--single,
+.select2-container--default .select2-selection--single select.select2-search__field,
+select.typeahead,
+select.tt-query,
+select.tt-hint {
+    padding: 0 .75rem;
+    border: 1px solid #e8ebf1;
+    border-radius: 0px;
+    outline: none;
+    color: #c9c8c8;
+}
+
+select.form-control.border-primary,
+select.border-primary,
+.email-compose-fields .select2-container--default select.border-primary.select2-selection--multiple,
+.select2-container--default select.border-primary.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-primary.select2-search__field {
+    outline: 1px solid #727cf5;
+}
+
+select.form-control.border-primary:focus,
+select.border-primary:focus,
+.email-compose-fields .select2-container--default select.border-primary.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-primary.select2-search__field:focus {
+    outline: 1px solid #727cf5;
+}
+
+select.form-control.border-secondary,
+select.border-secondary,
+.email-compose-fields .select2-container--default select.border-secondary.select2-selection--multiple,
+.select2-container--default select.border-secondary.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-secondary.select2-search__field {
+    outline: 1px solid #7987a1;
+}
+
+select.form-control.border-secondary:focus,
+select.border-secondary:focus,
+.email-compose-fields .select2-container--default select.border-secondary.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-secondary.select2-search__field:focus {
+    outline: 1px solid #7987a1;
+}
+
+select.form-control.border-success,
+select.border-success,
+.email-compose-fields .select2-container--default select.border-success.select2-selection--multiple,
+.select2-container--default select.border-success.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-success.select2-search__field {
+    outline: 1px solid #10b759;
+}
+
+select.form-control.border-success:focus,
+select.border-success:focus,
+.email-compose-fields .select2-container--default select.border-success.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-success.select2-search__field:focus {
+    outline: 1px solid #10b759;
+}
+
+select.form-control.border-info,
+select.border-info,
+.email-compose-fields .select2-container--default select.border-info.select2-selection--multiple,
+.select2-container--default select.border-info.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-info.select2-search__field {
+    outline: 1px solid #66d1d1;
+}
+
+select.form-control.border-info:focus,
+select.border-info:focus,
+.email-compose-fields .select2-container--default select.border-info.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-info.select2-search__field:focus {
+    outline: 1px solid #66d1d1;
+}
+
+select.form-control.border-warning,
+select.border-warning,
+.email-compose-fields .select2-container--default select.border-warning.select2-selection--multiple,
+.select2-container--default select.border-warning.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-warning.select2-search__field {
+    outline: 1px solid #fbbc06;
+}
+
+select.form-control.border-warning:focus,
+select.border-warning:focus,
+.email-compose-fields .select2-container--default select.border-warning.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-warning.select2-search__field:focus {
+    outline: 1px solid #fbbc06;
+}
+
+select.form-control.border-danger,
+select.border-danger,
+.email-compose-fields .select2-container--default select.border-danger.select2-selection--multiple,
+.select2-container--default select.border-danger.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-danger.select2-search__field {
+    outline: 1px solid #ff3366;
+}
+
+select.form-control.border-danger:focus,
+select.border-danger:focus,
+.email-compose-fields .select2-container--default select.border-danger.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-danger.select2-search__field:focus {
+    outline: 1px solid #ff3366;
+}
+
+select.form-control.border-light,
+select.border-light,
+.email-compose-fields .select2-container--default select.border-light.select2-selection--multiple,
+.select2-container--default select.border-light.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-light.select2-search__field {
+    outline: 1px solid #ececec;
+}
+
+select.form-control.border-light:focus,
+select.border-light:focus,
+.email-compose-fields .select2-container--default select.border-light.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-light.select2-search__field:focus {
+    outline: 1px solid #ececec;
+}
+
+select.form-control.border-dark,
+select.border-dark,
+.email-compose-fields .select2-container--default select.border-dark.select2-selection--multiple,
+.select2-container--default select.border-dark.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-dark.select2-search__field {
+    outline: 1px solid #282f3a;
+}
+
+select.form-control.border-dark:focus,
+select.border-dark:focus,
+.email-compose-fields .select2-container--default select.border-dark.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-dark.select2-search__field:focus {
+    outline: 1px solid #282f3a;
+}
+
+select.form-control.border-primary-muted,
+select.border-primary-muted,
+.email-compose-fields .select2-container--default select.border-primary-muted.select2-selection--multiple,
+.select2-container--default select.border-primary-muted.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-primary-muted.select2-search__field {
+    outline: 1px solid #b1cfec;
+}
+
+select.form-control.border-primary-muted:focus,
+select.border-primary-muted:focus,
+.email-compose-fields .select2-container--default select.border-primary-muted.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-primary-muted.select2-search__field:focus {
+    outline: 1px solid #b1cfec;
+}
+
+select.form-control.border-info-muted,
+select.border-info-muted,
+.email-compose-fields .select2-container--default select.border-info-muted.select2-selection--multiple,
+.select2-container--default select.border-info-muted.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-info-muted.select2-search__field {
+    outline: 1px solid #7ee5e5;
+}
+
+select.form-control.border-info-muted:focus,
+select.border-info-muted:focus,
+.email-compose-fields .select2-container--default select.border-info-muted.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-info-muted.select2-search__field:focus {
+    outline: 1px solid #7ee5e5;
+}
+
+select.form-control.border-danger-muted,
+select.border-danger-muted,
+.email-compose-fields .select2-container--default select.border-danger-muted.select2-selection--multiple,
+.select2-container--default select.border-danger-muted.select2-selection--single,
+.select2-container--default .select2-selection--single select.border-danger-muted.select2-search__field {
+    outline: 1px solid #f77eb9;
+}
+
+select.form-control.border-danger-muted:focus,
+select.border-danger-muted:focus,
+.email-compose-fields .select2-container--default select.border-danger-muted.select2-selection--multiple:focus,
+.select2-container--default .select2-selection--single select.border-danger-muted.select2-search__field:focus {
+    outline: 1px solid #f77eb9;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    vertical-align: top;
+    margin-bottom: .5rem;
+}
+
+.form-group.has-danger .form-control,
+.form-group.has-danger select,
+.form-group.has-danger .email-compose-fields .select2-container--default .select2-selection--multiple,
+.email-compose-fields .select2-container--default .form-group.has-danger .select2-selection--multiple,
+.form-group.has-danger .select2-container--default .select2-selection--single,
+.select2-container--default .form-group.has-danger .select2-selection--single,
+.form-group.has-danger .select2-container--default .select2-selection--single .select2-search__field,
+.select2-container--default .select2-selection--single .form-group.has-danger .select2-search__field,
+.form-group.has-danger .typeahead,
+.form-group.has-danger .tt-query,
+.form-group.has-danger .tt-hint {
+    border-color: #ff3366;
+}
+
+.form-group .file-upload-default {
+    visibility: hidden;
+    position: absolute;
+}
+
+.form-group .file-upload-info {
+    background: transparent;
+}

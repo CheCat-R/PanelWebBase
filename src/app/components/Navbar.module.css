@@ -1,0 +1,179 @@
+.navbar {
+    width: calc(100% - 240px);
+    height: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #f2f4f9;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    left: 240px;
+    z-index: 978;
+    box-shadow: 3px 0 10px 0 rgba(183, 192, 206, 0.2);
+    transition: width 0.1s ease, left 0.1s ease;
+}
+
+.navbarContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbarNav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.navItem {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    color: #535353;
+    padding: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.dropdownHeader {
+    padding: 12px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid #f2f4f9;
+}
+
+.dropdownBody {
+    padding: 5px;
+    max-height: 300px;
+    position: relative;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    border-radius: 6px;
+}
+
+.dropdownItem:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdownHeader,
+.dropdownFooter {
+    padding: 12px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid #f2f4f9;
+}
+
+.dropdownFooter {
+    border-top: 1px solid #f2f4f9;
+    border-bottom: none;
+}
+
+.sidebarToggler {
+    padding: 0 20px;
+}
+
+.indicator {
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.figure {
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+}
+
+.messageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subText {
+    font-size: 12px;
+    color: #999;
+}
+
+.fontWeightMedium {
+    font-weight: 500;
+}
+
+.textMuted {
+    color: #999;
+}
+
+.navMessage {}
+
+.navNotifications {}
+
+.navProfile {}
+
+.info {
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.email {
+    font-size: 12px;
+    color: #999;
+}
+
+.profileNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon {
+    margin-right: 10px;
+}
