@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import styles from "./Navbar.module.css";
-import { Bell, Mail, CircleUser } from "lucide-react";
+import { Bell, Mail, CircleUser, User, UserPen, LogOut } from "lucide-react";
 
 const Navbar = () => {
   const [showMessages, setShowMessages] = useState(false);
@@ -162,16 +162,24 @@ const Navbar = () => {
               </div>
               <div className={styles.dropdownBody}>
                 <ul className={styles.profileNav}>
-                  {["Profile", "Edit Profile", "Switch User", "Log Out"].map(
-                    (label, index) => (
-                      <li key={index} className={styles.navItem}>
-                        <a href="#" className={styles.navLink}>
-                          <i data-feather="user" />
-                          <span>{label}</span>
-                        </a>
-                      </li>
-                    )
-                  )}
+                  <li className={styles.navItem}>
+                    <a href="#" className={styles.navLink}>
+                      <User />
+                      <span>Profile</span>
+                    </a>
+                  </li>
+                  <li className={styles.navItem}>
+                    <a href="#" className={styles.navLink}>
+                    <UserPen />
+                      <span>Edit Profile</span>
+                    </a>
+                  </li>
+                  <li className={styles.navItem}>
+                    <a href="#" className={styles.navLink}>
+                    <LogOut />
+                      <span>Log Out</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
